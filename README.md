@@ -1,6 +1,7 @@
-# COST-GED: Cost-verified Self-training for Graph Edit Distance
+<img width="432" height="58" alt="image" src="https://github.com/user-attachments/assets/368ab9db-44ce-4bff-b7b1-edc56516ed84" /># COST-GED: Cost-verified Self-training for Graph Edit Distance
 
-基于 GELATO 的自改进图编辑距离训练框架。不依赖精确 GED 标签，通过代价验证自训练持续优化图匹配模型。
+代价引导的无精确标签图编辑距离自改进学习
+
 
 ---
 
@@ -16,7 +17,7 @@ pip install -r requirements.txt
 
 ```
 ├── src/
-│   ├── model.py / model_large.py   # LinkGNN（model_large 向下兼容）
+│   ├── model.py                    # LinkGNN
 │   ├── dataset.py                  # 小图数据加载
 │   ├── subproblem_dataset.py       # 子问题构造
 │   └── utils.py                    # 代价/推理/指标
@@ -27,6 +28,9 @@ pip install -r requirements.txt
 ├── evaluate_large_graphs.py        # 大图评估（计时）
 ├── test.py                         # 小图测试
 ├── hungarian_ged_standalone.py     # 独立匈牙利 GED
+├── data/                           # 数据集（见下）
+│   ├── aids/  code2-22/  imdb-16/  linux/  molhiv-16/  zinc-16/
+│   └── ogb/ogbg_molhiv/raw/   ogb/cache/
 ├── requirements.txt
 └── .gitignore
 ```
