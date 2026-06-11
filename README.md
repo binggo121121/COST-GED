@@ -1,4 +1,4 @@
-<img width="432" height="58" alt="image" src="https://github.com/user-attachments/assets/368ab9db-44ce-4bff-b7b1-edc56516ed84" /># COST-GED: Cost-verified Self-training for Graph Edit Distance
+# COST-GED: Cost-verified Self-training for Graph Edit Distance
 
 代价引导的无精确标签图编辑距离自改进学习
 
